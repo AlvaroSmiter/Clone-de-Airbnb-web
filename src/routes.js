@@ -29,7 +29,7 @@ const Routes = () => (
         <Route exact path="/" component={SignIn} />
         <Route path="/signup" component={SignUp} />
         <PrivateRoute path="/app" component={App} />
-        <Route path="*" component={() => <h1>Page not found</h1>} />
+        <Route path="*" component={() => <h1>Página não encontrada</h1>} />
       </Switch>
       <ModalContainer />
     </Fragment>

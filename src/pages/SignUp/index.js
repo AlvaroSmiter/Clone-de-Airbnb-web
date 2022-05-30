@@ -52,7 +52,13 @@ class SignUp extends Component {
             placeholder="Senha"
             onChange={e => this.setState({ password: e.target.value })}
           />
-          <button type="submit">Cadastrar grátis</button>
+          <button
+    type="submit"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href='https://www.airbnb.com.br/';
+      }}
+>Cadastrar grátis</button>
           <hr />
           <Link to="/">Fazer login</Link>
         </Form>
